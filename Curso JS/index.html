@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/path/to/styles/default.min.css">
+    <script src="/path/to/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Curso de JavaScript</title>
+</head>
+<body>
+    <h1>Fundamentos trabajando con var, let y const</h1>
+    <h2>Diferencias</h2>
+    <p>
+        Cuando usamos var vs let definimos el scope o espacio de vida que tiene
+        una variable con var globalizamos el entorno osea la podemos ocupar en
+        cualquier parte del programa, mientras que con let la limitamos a un
+        entorno local destruyendose al finalizar ese entorno como por ejemplo
+        situar una decalración de una variable dentro de un if si la declaramos
+        con let solo vivira en el if y al terminar el proceso esta se destruira.
+    </p>
+
+    <pre>
+        var edad = 10
+        if(true){
+            var edad = 20
+            console.log(edad)
+        }
+
+        console.log(edad)
+    </pre>
+    <script src="01varLetConst.js"></script>
+</body>
+</html>
